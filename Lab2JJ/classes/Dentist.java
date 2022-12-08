@@ -20,7 +20,7 @@ public class Dentist {
     }
 
     public void Input() {
-        Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in,"windows-1251");
         System.out.print("Введите ФИО дантиста: ");
         FIO = input.nextLine();
         System.out.print("Введите id дантиста: ");
@@ -33,5 +33,8 @@ public class Dentist {
         System.out.println("ID дантиста: " + ID);
         System.out.println("ФИО дантиста: " + FIO);
         System.out.println("Опыт дантиста: " + EXP);
+    }
+    public int get_EXP() {
+        return EXP;
     }
 }

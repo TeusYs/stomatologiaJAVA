@@ -20,7 +20,7 @@ public class Service {
     }
 
     public void Input() {
-        Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in, "windows-1251");
         System.out.print("Введите ID Услуги: ");
         ID = input.nextInt();
         input.nextLine();
@@ -33,5 +33,13 @@ public class Service {
     public void Output() {
         System.out.println("ID услуги: " + ID);
         System.out.println("Название и цена услуги: " + Title + " " + Price);
+    }
+
+    public int get_price() {
+        return Price;
+    }
+
+    public void set_Price(int Price) {
+        this.Price = Price;
     }
 }

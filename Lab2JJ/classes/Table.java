@@ -38,4 +38,8 @@ public class Table {
         branch.Output();
 
     }
+    public double sum_costs() {
+		double sum = service.get_price() + (service.get_price() * dentist.get_EXP() / 100.);
+		return sum;
+	}
 }

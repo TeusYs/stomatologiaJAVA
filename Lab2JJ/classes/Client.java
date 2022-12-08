@@ -17,7 +17,7 @@ public class Client {
     }
 
     public void Input() {
-        Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in,"windows-1251");
         System.out.print("Введите ФИО клиента: ");
         FIO = input.nextLine();
         System.out.print("Введите id клиента: ");

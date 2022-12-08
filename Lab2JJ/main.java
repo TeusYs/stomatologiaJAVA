@@ -50,13 +50,14 @@ public class main {
         newService2.Output();
         System.out.println("\n");
 
-        Table newTable1 = new Table();
-        Table newTable2 = new Table(newClient1, newDentist1, newService1, newBranch1);
-        newTable1.Input();
-        System.out.println("\n" + "dl1:");
-        newTable1.Output();
-        System.out.println("\n" + "dl2:");
-        newTable2.Output();
-        ;
+        Table[] Tables = new Table[2];
+        Tables[0]= new Table();
+        Tables[1] = new Table(newClient1, newDentist1, newService1, newBranch1);
+        for (int i = 0; i < 2; i++) {
+			System.out.println();
+			Tables[i].Output();
+			System.out.println("Общая трата криента на услуги: " + Tables[i].sum_costs());
+        }
     }
+
 }

@@ -20,7 +20,7 @@ public class Branch {
     }
 
     public void Input() {
-        Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in,"windows-1251");
         System.out.print("Введите id филиала: ");
         ID = input.nextInt();
         input.nextLine();
