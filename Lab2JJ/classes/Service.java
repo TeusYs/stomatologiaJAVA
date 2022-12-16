@@ -27,7 +27,15 @@ public class Service {
         System.out.print("Введите название услуги: ");
         Title = input.nextLine();
         System.out.print("Введите цену услуги: ");
-        Price = input.nextInt();
+        try{
+            Price = input.nextInt();
+            if (Price > 1000000 || Price < 0 ) throw new Exception("Введеное число не соответсвует условию");
+        }
+        catch (Exception ex){
+            System.out.println(ex.getMessage());
+            Price=0;
+        }
+
     }
 
     public void Output() {
